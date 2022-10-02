@@ -67,7 +67,7 @@ goto :Main
 color a
 cls
 start https://nmap.org/
-goto:main
+goto:Main
 
 
 
