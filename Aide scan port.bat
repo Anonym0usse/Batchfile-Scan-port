@@ -26,7 +26,7 @@ echo.
 echo	│ 1.IPGéolocalisation
 echo	│ 2.VérifAccèsDistance
 echo	│ 3.VérifVirus
-echo	│ 4.
+echo	│ 4.Sites
 echo	│ 5.Partir
 
 echo.
@@ -35,6 +35,7 @@ set /p picks=[+]Nombre:
 
 if %picks% == 1 goto Iplocation
 if %picks% == 2 goto Verif
+if %picks% == 4 goto Sites
 if %picks% == 3 goto Antivirus
 if %picks% == 5 exit
 
@@ -62,6 +63,12 @@ netplwiz
 goto :Main
 
 
+:Sites
+color a
+cls
+start https://nmap.org/
+cls
+pause
 
 
 
