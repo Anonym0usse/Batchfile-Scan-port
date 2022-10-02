@@ -26,7 +26,7 @@ echo.
 echo	│ 1.IPGéolocalisation
 echo	│ 2.VérifAccèsDistance
 echo	│ 3.VérifVirus
-echo	│ 4.Sites
+echo	│ 4.SiteNmap
 echo	│ 5.Partir
 
 echo.
@@ -64,10 +64,10 @@ goto :Main
 
 
 :Sites
-color a
+
 cls
 start https://nmap.org/
-goto:Main
+goto :Main
 
 
 
